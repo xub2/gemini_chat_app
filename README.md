@@ -1,16 +1,17 @@
 # gemini_chat_app
 
-A new Flutter project.
+made by xub2
 
-## Getting Started
+this is Flutter Chat app using Gemini
 
-This project is a starting point for a Flutter application.
+make sure you download all newest version pub
 
-A few resources to get you started if this is your first Flutter project:
+1. flutter_chat_types
+2. flutter_chat_ui
+3. http
+4. web_socket_channel
+5. imagepicker
+6. intl
+7. uuid
+8. google_fonts
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
