@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'chat_page.dart';
 
@@ -22,26 +23,49 @@ class HomePage extends StatelessWidget {
           ),
           Spacer(flex: 2), // 타이틀과 버튼 사이 공간
           Center(
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.white, // 버튼 배경색을 흰색으로 설정
-                minimumSize: Size(200, 60), // 버튼 크기 설정
-                textStyle: TextStyle(
-                  fontSize: 20, // 글자 크기 설정
+            child: Column(
+              children: [
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white, // 버튼 배경색을 흰색으로 설정
+                    minimumSize: Size(200, 60), // 버튼 크기 설정
+                    textStyle: TextStyle(
+                      fontSize: 20, // 글자 크기 설정
+                    ),
+                  ),
+                  onPressed: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(builder: (context) => ChatPage()),
+                    );
+                  },
+                  child: Text(
+                    '시작해 볼까요?',
+                    style: TextStyle(
+                      color: Color(0xFF223E9A), // 글자 색상 설정
+                    ),
+                  ),
                 ),
-              ),
-              onPressed: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => ChatPage()),
-                );
-              },
-              child: Text(
-                '시작해 볼까요?',
-                style: TextStyle(
-                  color: Color(0xFF223E9A), // 글자 색상 설정
+                SizedBox(height: 20), // 버튼 사이 공간
+                ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: Colors.white, // 버튼 배경색을 흰색으로 설정
+                    minimumSize: Size(200, 60), // 버튼 크기 설정
+                    textStyle: TextStyle(
+                      fontSize: 20, // 글자 크기 설정
+                    ),
+                  ),
+                  onPressed: () {
+                    SystemNavigator.pop();
+                  },
+                  child: Text(
+                    '앱 종료',
+                    style: TextStyle(
+                      color: Color(0xFF223E9A), // 글자 색상 설정
+                    ),
+                  ),
                 ),
-              ),
+              ],
             ),
           ),
           Spacer(flex: 5), // 아래쪽 공간
