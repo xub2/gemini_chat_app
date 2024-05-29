@@ -10,7 +10,7 @@ class ChatManager {
   );
   final bot = const types.User(
       id: 'model',
-      firstName: 'Gemini'
+      firstName: 'Gemini AI'
   );
   bool isLoading = false;
   late WebSocketChannel channel;
