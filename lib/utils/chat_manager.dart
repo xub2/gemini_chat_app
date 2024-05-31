@@ -23,7 +23,7 @@ class ChatManager {
     messages.insert(0, message);
     isLoading = true;
     if (message is types.TextMessage) {
-      channel.sink.add(message.text); // sending text message to the backend api
+      channel.sink.add(message.text);
       messages.insert(
           0,
           types.TextMessage(
