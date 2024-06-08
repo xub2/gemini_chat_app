@@ -6,6 +6,10 @@
 # 개발 기간
 > 2024.03 ~ 2024.05
 
+## 참여 인원
+|<img src="https://avatars.githubusercontent.com/u/104479096?v=4" width="150" height="150"/>|
+|:-:|
+|xuv2<br/>[@xub2](https://github.com/xub2)|
 
 ## 프로젝트 소개
 
