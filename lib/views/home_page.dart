@@ -20,7 +20,7 @@ class HomePage extends StatelessWidget {
               fontSize: 90,
               fontWeight: FontWeight.bold,
               color: Colors.white,
-          ),
+            ),
           ),
           Spacer(flex: 2),
           Center(
@@ -29,7 +29,7 @@ class HomePage extends StatelessWidget {
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
-                    minimumSize: Size(200, 60),
+                    minimumSize: Size(320, 60),
                     textStyle: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -39,7 +39,7 @@ class HomePage extends StatelessWidget {
                     launchUrl(Uri.parse('https://gemini.google.com/'));
                   },
                   child: Text(
-                    '🔷 Gemini Web',
+                    'Gemini Web',
                     style: TextStyle(
                       color: Color(0xFF223E9A),
                       fontWeight: FontWeight.bold,
@@ -50,7 +50,7 @@ class HomePage extends StatelessWidget {
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Colors.white,
-                    minimumSize: Size(200, 60),
+                    minimumSize: Size(320, 60),
                     textStyle: TextStyle(
                       fontSize: 20,
                       fontWeight: FontWeight.bold,
@@ -63,7 +63,7 @@ class HomePage extends StatelessWidget {
                     );
                   },
                   child: Text(
-                    '🔍 대화를 시작해 볼까요?',
+                    '대화 시작하기',
                     style: TextStyle(
                       color: Color(0xFF223E9A),
                       fontWeight: FontWeight.bold,
@@ -87,7 +87,7 @@ class HomePage extends StatelessWidget {
                         launchUrl(Uri.parse('https://xuv2.notion.site/My-Gemini-by-Gemini-API-37863f4c42d24d028af5ba190c716809?pvs=4'));
                       },
                       child: Text(
-                        '🔗 Notion',
+                        'Notion',
                         style: TextStyle(
                           color: Color(0xFF223E9A),
                           fontWeight: FontWeight.bold,
@@ -108,7 +108,7 @@ class HomePage extends StatelessWidget {
                         SystemNavigator.pop(); // 어플 종료
                       },
                       child: Text(
-                        '🚪 종료',
+                        '나가기',
                         style: TextStyle(
                           color: Colors.red,
                           fontWeight: FontWeight.bold,
