@@ -26,49 +26,56 @@ class HomePage extends StatelessWidget {
           Center(
             child: Column(
               children: [
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    minimumSize: Size(320, 60),
-                    textStyle: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
+                        ),
+                        padding: EdgeInsets.all(0),
+                        fixedSize: Size(150, 150), // 정사각형으로 설정
+                      ),
+                      onPressed: () {
+                        launchUrl(Uri.parse('https://gemini.google.com/'));
+                      },
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(18.0),
+                        child: Image.asset(
+                          'assets/images/Gemini.png',
+                          fit: BoxFit.cover,
+                          width: 150,
+                          height: 150,
+                        ),
+                      ),
                     ),
-                  ),
-                  onPressed: () {
-                    launchUrl(Uri.parse('https://gemini.google.com/'));
-                  },
-                  child: Text(
-                    'Gemini Web',
-                    style: TextStyle(
-                      color: Color(0xFF223E9A),
-                      fontWeight: FontWeight.bold,
+                    SizedBox(width: 20),
+                    ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
+                        ),
+                        padding: EdgeInsets.all(0),
+                        fixedSize: Size(150, 150), // 정사각형으로 설정
+                      ),
+                      onPressed: () {
+                        Navigator.push(
+                          context,
+                          MaterialPageRoute(builder: (context) => ChatPage()),
+                        );
+                      },
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(18.0),
+                        child: Image.asset(
+                          'assets/images/Chat.png',
+                          fit: BoxFit.cover,
+                          width: 150,
+                          height: 150,
+                        ),
+                      ),
                     ),
-                  ),
-                ),
-                SizedBox(height: 20),
-                ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    backgroundColor: Colors.white,
-                    minimumSize: Size(320, 60),
-                    textStyle: TextStyle(
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                  onPressed: () {
-                    Navigator.push(
-                      context,
-                      MaterialPageRoute(builder: (context) => ChatPage()),
-                    );
-                  },
-                  child: Text(
-                    '대화를 시작해 볼까요?',
-                    style: TextStyle(
-                      color: Color(0xFF223E9A),
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
+                  ],
                 ),
                 SizedBox(height: 20),
                 Row(
@@ -76,42 +83,44 @@ class HomePage extends StatelessWidget {
                   children: [
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        minimumSize: Size(150, 50),
-                        textStyle: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
                         ),
+                        padding: EdgeInsets.all(0),
+                        fixedSize: Size(150, 150), // 정사각형으로 설정
                       ),
                       onPressed: () {
                         launchUrl(Uri.parse('https://xuv2.notion.site/My-Gemini-by-Gemini-API-37863f4c42d24d028af5ba190c716809?pvs=4'));
                       },
-                      child: Text(
-                        'Notion',
-                        style: TextStyle(
-                          color: Color(0xFF223E9A),
-                          fontWeight: FontWeight.bold,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(18.0),
+                        child: Image.asset(
+                          'assets/images/Gnotion.png',
+                          fit: BoxFit.cover,
+                          width: 150,
+                          height: 150,
                         ),
                       ),
                     ),
                     SizedBox(width: 20),
                     ElevatedButton(
                       style: ElevatedButton.styleFrom(
-                        backgroundColor: Colors.white,
-                        minimumSize: Size(150, 50),
-                        textStyle: TextStyle(
-                          fontSize: 18,
-                          fontWeight: FontWeight.bold,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(18.0),
                         ),
+                        padding: EdgeInsets.all(0),
+                        fixedSize: Size(150, 150), // 정사각형으로 설정
                       ),
                       onPressed: () {
                         SystemNavigator.pop(); // 어플 종료
                       },
-                      child: Text(
-                        '종료',
-                        style: TextStyle(
-                          color: Colors.red,
-                          fontWeight: FontWeight.bold,
+                      child: ClipRRect(
+                        borderRadius: BorderRadius.circular(18.0),
+                        child: Image.asset(
+                          'assets/images/Exit.png',
+                          fit: BoxFit.cover,
+                          width: 150,
+                          height: 150,
                         ),
                       ),
                     ),
