@@ -12,7 +12,7 @@ class HomePage extends StatelessWidget {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Spacer(flex: 1),
+          Spacer(flex: 3),
           Text(
             'My\nGemini',
             textAlign: TextAlign.center,
@@ -35,19 +35,40 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(18.0),
                         ),
                         padding: EdgeInsets.all(0),
-                        fixedSize: Size(150, 150), // 정사각형으로 설정
+                        fixedSize: Size(130, 130), // 정사각형으로 설정
                       ),
                       onPressed: () {
                         launchUrl(Uri.parse('https://gemini.google.com/'));
                       },
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(18.0),
-                        child: Image.asset(
-                          'assets/images/Gemini.png',
-                          fit: BoxFit.cover,
-                          width: 150,
-                          height: 150,
-                        ),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(18.0),
+                            child: Image.asset(
+                              'assets/images/Gemini.png',
+                              fit: BoxFit.cover,
+                              width: 130,
+                              height: 130,
+                            ),
+                          ),
+                          Positioned(
+                            bottom: 5,
+                            left: 5,
+                            right: 5,
+                            child: Container(
+                              color: Colors.white,
+                              padding: EdgeInsets.symmetric(vertical: 2.0),
+                              child: Text(
+                                'Gemini',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Color(0xFF223E9A),
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(width: 20),
@@ -57,7 +78,7 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(18.0),
                         ),
                         padding: EdgeInsets.all(0),
-                        fixedSize: Size(150, 150), // 정사각형으로 설정
+                        fixedSize: Size(130, 130), // 정사각형으로 설정
                       ),
                       onPressed: () {
                         Navigator.push(
@@ -65,14 +86,35 @@ class HomePage extends StatelessWidget {
                           MaterialPageRoute(builder: (context) => ChatPage()),
                         );
                       },
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(18.0),
-                        child: Image.asset(
-                          'assets/images/Chat.png',
-                          fit: BoxFit.cover,
-                          width: 150,
-                          height: 150,
-                        ),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(18.0),
+                            child: Image.asset(
+                              'assets/images/Chat.png',
+                              fit: BoxFit.cover,
+                              width: 130,
+                              height: 130,
+                            ),
+                          ),
+                          Positioned(
+                            bottom: 5,
+                            left: 5,
+                            right: 5,
+                            child: Container(
+                              color: Colors.white,
+                              padding: EdgeInsets.symmetric(vertical: 2.0),
+                              child: Text(
+                                'Chat',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Color(0xFF223E9A),
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
@@ -87,19 +129,40 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(18.0),
                         ),
                         padding: EdgeInsets.all(0),
-                        fixedSize: Size(150, 150), // 정사각형으로 설정
+                        fixedSize: Size(130, 130), // 정사각형으로 설정
                       ),
                       onPressed: () {
                         launchUrl(Uri.parse('https://xuv2.notion.site/My-Gemini-by-Gemini-API-37863f4c42d24d028af5ba190c716809?pvs=4'));
                       },
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(18.0),
-                        child: Image.asset(
-                          'assets/images/Gnotion.png',
-                          fit: BoxFit.cover,
-                          width: 150,
-                          height: 150,
-                        ),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(18.0),
+                            child: Image.asset(
+                              'assets/images/Gnotion.png',
+                              fit: BoxFit.cover,
+                              width: 130,
+                              height: 130,
+                            ),
+                          ),
+                          Positioned(
+                            bottom: 5,
+                            left: 5,
+                            right: 5,
+                            child: Container(
+                              color: Colors.white,
+                              padding: EdgeInsets.symmetric(vertical: 2.0),
+                              child: Text(
+                                'Notion',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Color(0xFF223E9A),
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                     SizedBox(width: 20),
@@ -109,19 +172,40 @@ class HomePage extends StatelessWidget {
                           borderRadius: BorderRadius.circular(18.0),
                         ),
                         padding: EdgeInsets.all(0),
-                        fixedSize: Size(150, 150), // 정사각형으로 설정
+                        fixedSize: Size(130, 130), // 정사각형으로 설정
                       ),
                       onPressed: () {
                         SystemNavigator.pop(); // 어플 종료
                       },
-                      child: ClipRRect(
-                        borderRadius: BorderRadius.circular(18.0),
-                        child: Image.asset(
-                          'assets/images/Exit.png',
-                          fit: BoxFit.cover,
-                          width: 150,
-                          height: 150,
-                        ),
+                      child: Stack(
+                        children: [
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(18.0),
+                            child: Image.asset(
+                              'assets/images/close.png',
+                              fit: BoxFit.cover,
+                              width: 130,
+                              height: 130,
+                            ),
+                          ),
+                          Positioned(
+                            bottom: 5,
+                            left: 5,
+                            right: 5,
+                            child: Container(
+                              color: Colors.white,
+                              padding: EdgeInsets.symmetric(vertical: 2.0),
+                              child: Text(
+                                'Exit',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(
+                                  color: Color(0xFF223E9A),
+                                  fontSize: 16,
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
                       ),
                     ),
                   ],
