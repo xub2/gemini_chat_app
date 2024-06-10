@@ -16,9 +16,9 @@ class HomePage extends StatelessWidget {
           Text(
             'My\nGemini',
             textAlign: TextAlign.center,
-            style: GoogleFonts.lobster(
-              fontSize: 90,
-              fontWeight: FontWeight.bold,
+            style: GoogleFonts.rubikMonoOne(
+              fontSize: 65,
+              fontWeight: FontWeight.normal,
               color: Colors.white,
             ),
           ),
