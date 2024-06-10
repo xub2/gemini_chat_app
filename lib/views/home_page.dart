@@ -182,7 +182,7 @@ class HomePage extends StatelessWidget {
                           ClipRRect(
                             borderRadius: BorderRadius.circular(18.0),
                             child: Image.asset(
-                              'assets/images/close.png',
+                              'assets/images/Exit.png',
                               fit: BoxFit.cover,
                               width: 130,
                               height: 130,
