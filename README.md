@@ -44,14 +44,14 @@ Flutter 설치 및 Gemini API 발급 필수
 ## 실행 결과
 <table>
   <tr>
-    <td><img src="https://github.com/xub2/gemini_backend/assets/104479096/fb3bcce9-847d-43ed-8b8f-ce0c8b90ff89" width="200" style="margin: 5px;"></td>
-    <td><img src="https://github.com/xub2/gemini_backend/assets/104479096/d8f34b09-3250-43ec-88d3-dbf1956695b5" width="200" style="margin: 5px;"></td>
-    <td><img src="https://github.com/xub2/gemini_backend/assets/104479096/03dfaef5-3001-4396-8155-f20ea732eb83" width="200" style="margin: 5px;"></td>
+    <td><img src="https://github.com/xub2/gemini_chat_app/assets/104479096/7d275af0-0369-49ff-9a9d-923a263cec46" width="200" style="margin: 5px;"></td>
+    <td><img src="https://github.com/xub2/gemini_chat_app/assets/104479096/8541df64-d27c-405c-be07-d1dc6be718d7" width="200" style="margin: 5px;"></td>
+    <td><img src="https://github.com/xub2/gemini_chat_app/assets/104479096/6175cfbd-9e59-4836-b74c-3583624ad12c" width="200" style="margin: 5px;"></td>
     
   </tr>
   <tr>
-    <td><img src="https://github.com/xub2/gemini_backend/assets/104479096/c14783fb-572f-42cc-a1ac-6d25fdc738f8" width="200" style="margin: 5px;"></td>
-    <td><img src="https://github.com/xub2/gemini_backend/assets/104479096/0af67eb7-f2d2-46c9-8c04-513f423719fe" width="200" style="margin: 5px;"></td>
+    <td><img src="https://github.com/xub2/gemini_chat_app/assets/104479096/f0954ba9-37e4-4a46-9752-33f63c572f9e" width="200" style="margin: 5px;"></td>
+    <td><img src="https://github.com/xub2/gemini_chat_app/assets/104479096/7190d56e-2e37-40bd-a789-82ba2d198720" width="200" style="margin: 5px;"></td>
   </tr>
 </table>
 
