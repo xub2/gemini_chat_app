@@ -38,8 +38,6 @@ Flutter 설치 및 Gemini API 발급 필수
 - [Flutter](https://docs.flutter.dev/)
 - [Gemini api](https://ai.google.dev/)
 
-## Gemini API 작동 원리
-![Untitled 7](https://github.com/xub2/gemini_backend/assets/104479096/0374f0d0-8454-4f5f-926a-07e62c8569b9)
 
 ## 실행 결과
 <table>
